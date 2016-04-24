@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIView *gitTestView = [[UIView alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 300)];
+    gitTestView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:gitTestView];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
