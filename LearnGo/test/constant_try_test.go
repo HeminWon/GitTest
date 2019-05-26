@@ -1,4 +1,4 @@
-package exercise_test
+package test
 
 import "testing"
 
