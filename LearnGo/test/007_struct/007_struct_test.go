@@ -6,13 +6,12 @@ import (
 )
 
 type Employee struct {
-	ID        string
-	Name      string
-	Address   string
-	DoB       time.Time // 出生日期
-	Position  string
-	Salary    int
-	ManagerID string
+	ID            string
+	Name, Address string
+	DoB           time.Time // 出生日期
+	Position      string
+	Salary        int
+	ManagerID     string
 }
 
 func TestStructInit(t *testing.T) {
@@ -25,4 +24,37 @@ func TestStructInit(t *testing.T) {
 	position := &dilbert.Position
 	*position = "Senior " + *position // promoted, for outsourcing to Elbonia
 	t.Log(dilbert)
+
+	var employeeOfTheMonth *Employee = &dilbert
+	// employeeOfTheMonth.Position += " (proactive team player)"
+	(*employeeOfTheMonth).Position += " (proactive team player)"
+	t.Log(dilbert)
+
+}
+
+type Point struct {
+	X, Y int
+}
+
+type Circle struct {
+	Point
+	Radius int
+}
+
+type Wheel struct {
+	Circle
+	Spokes int
+}
+
+func TestNestedStruct(t *testing.T) {
+	var w Wheel
+	w.Circle.Point.Y = 10
+	w.X = 10
+
+	w1 := &Wheel{Circle{Point{8, 8}, 8}, 16}
+	t.Logf("%T", w1)
+
+	w2 := Wheel{Circle{Point{8, 8}, 8}, 16}
+	t.Logf("%T", w2)
+
 }
