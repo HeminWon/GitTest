@@ -43,7 +43,7 @@
         },
         {
             "protocol": "vmess",
-            "port": "45000-45999",
+            "port": "45000-45001",
             "tag": "vmess-detour",
             "settings": {},
             "allocate": {

@@ -6,12 +6,12 @@ services:
     container_name: v2ray
     restart: always
     volumes:
-      - ./v2ray/client.json:/etc/v2ray/config.json
+      - ./v2ray:/etc/v2ray
     ports:
       - "10086:10086"
       - "10086:10086/udp"
       - "10087:10087"
       - "10087:10087/udp"
-      - "45000-45999:45000-45999"
-      - "45000-45999:45000-45999/udp"
+      - "45000-45001:45000-45001"
+      - "45000-45001:45000-45001/udp"
     command: ["v2ray","-config=/etc/v2ray/config.json"]
