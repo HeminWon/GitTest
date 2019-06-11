@@ -13,3 +13,9 @@ $ svn checkout https://github.com/HeminWon/learn/trunk/docker/v2ray
 
 $ systemctl start docker
 $ docker-compose up -d
+
+
+
+
+
+rejected  v2ray.com/core/proxy/shadowsocks: failed to read IV > EOF
