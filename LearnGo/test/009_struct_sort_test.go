@@ -2,6 +2,7 @@ package test
 
 import (
 	"fmt"
+	"os"
 	"sort"
 	"strings"
 	"testing"
@@ -70,4 +71,9 @@ func TestStructSort(t *testing.T) {
 	for _, person := range persons {
 		fmt.Println(person.Name, ":", person.Age)
 	}
+}
+
+func TestENV(t *testing.T) {
+	env := os.Getenv("ENV")
+	t.Logf(">>>>>>>>>> %s", env)
 }

@@ -1,5 +1,6 @@
 {
     "go.testFlags": ["-v"],
     "go.autocompleteUnimportedPackages": true,
-    "go.formatTool": "gofmt"
+    "go.formatTool": "gofmt",
+    "go.testEnvVars": {"ENV":"local"}
 }
