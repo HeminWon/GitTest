@@ -14,8 +14,10 @@ $ svn checkout https://github.com/HeminWon/learn/trunk/docker/v2ray
 $ systemctl start docker
 $ docker-compose up -d
 
+$ docker exec -it 775c7c9ee1e1 /bin/bash
 
-
-
-
+log:
 rejected  v2ray.com/core/proxy/shadowsocks: failed to read IV > EOF
+
+v2ray.com/core/proxy/vmess/encoding: invalid user
+
