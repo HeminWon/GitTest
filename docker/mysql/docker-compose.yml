@@ -1,0 +1,21 @@
+
+version: '3.7'
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    ports:
+      - "20001:20001"
+    expose:
+      - "20001"
+    command: [
+      "--log-bin=mysql-bin",
+      "--server-id=${SERVER_ID}",
+      "--character-set-server=utf8mb4",
+      "--collation-server=utf8mb4_unicode_ci",
+      "--innodb_flush_log_at_trx_commit=1",
+      "--sync_binlog=1"
+      ]
