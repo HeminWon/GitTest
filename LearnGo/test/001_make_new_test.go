@@ -25,9 +25,9 @@ func TestNewSlice(t *testing.T) {
 	if s2 == nil {
 		t.Logf("s2 is nil --> %#v \n ", s2)
 	} else {
-		if *s2 == nil {
-			t.Logf("*s3 is nill --> %#v \n ", *s2)
-		}
+		// if *s2 == nil {
+		// 	t.Logf("*s3 is nill --> %#v \n ", *s2)
+		// }
 		t.Logf("s2 is not nill --> %#v \n ", s2) // []int{0, 0, 0}
 	}
 
@@ -40,4 +40,26 @@ func TestNewSlice(t *testing.T) {
 		}
 		t.Logf("s3 is not nill --> %#v \n ", s3) // []int{0, 0, 0}
 	}
+}
+
+type HashMap map[string]bool
+
+func TestMapInit2(t *testing.T) {
+	m0 := HashMap{}
+	m0["0"] = false
+	t.Log(m0)
+
+	m1 := &HashMap{}
+	if *m1 == nil {
+		t.Log("m1 == nil")
+	}
+	(*m1)["1"] = false
+	t.Log(m1)
+
+	m2 := new(HashMap)
+	if *m2 == nil {
+		t.Log("m2 == nil")
+	}
+	(*m2)["2"] = false
+	t.Log(m2)
 }
