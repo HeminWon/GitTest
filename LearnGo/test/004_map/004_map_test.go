@@ -65,3 +65,25 @@ func TestMapForSet(t *testing.T) {
 	delete(myset, 1)
 	t.Log(myset)
 }
+
+type HashMap map[string]bool
+
+func TestMapInit2(t *testing.T) {
+	m0 := HashMap{}
+	m0["0"] = false
+	t.Log(m0)
+
+	m1 := &HashMap{}
+	if *m1 == nil {
+		t.Log("m1 == nil")
+	}
+	(*m1)["1"] = false
+	t.Log(m1)
+
+	m2 := new(HashMap)
+	if *m2 == nil {
+		t.Log("m2 == nil")
+	}
+	(*m2)["2"] = false
+	t.Log(m2)
+}
