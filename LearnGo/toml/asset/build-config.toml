@@ -1,0 +1,48 @@
+[[sdk-build-config]]
+id = "bool-key-test"
+type = "bool"
+description = "bool参数构建"
+defaultValue = true
+
+[[sdk-build-config]]
+id = "string-key-test"
+type = "string"
+description = "string 参数构建"
+defaultValue = "默认参数"
+
+[[sdk-build-config]]
+id = "choice-key-test"
+type = "option"
+description = "选项参数构建"
+
+  [[sdk-build-config.list]]
+  id = "option-key-001"
+  description = "选项1"
+
+  [[sdk-build-config.list]]
+  id = "option-key-002"
+  description = "选项2"
+
+  [[sdk-build-config.list]]
+  id = "option-key-003"
+  description = "选项3"
+
+[[sdk-build-config]]
+id = "choices-key-test"
+type = "options"
+description = "多选参数构建"
+
+  [[sdk-build-config.list]]
+  id = "options-key-001"
+  description = "多参数1"
+  defaultValue = true
+
+  [[sdk-build-config.list]]
+  id = "options-key-002"
+  description = "多参数2"
+  defaultValue = true
+
+  [[sdk-build-config.list]]
+  id = "options-key-003"
+  description = "多参数3"
+  defaultValue = false
