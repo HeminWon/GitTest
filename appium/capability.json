@@ -1,8 +1,9 @@
 {
-    "deviceName": "Hemin-iPhone",
     "platformName": "iOS",
-    "platformVersion": "12.4.1",
+    "platformVersion": "13.0",
+    "deviceName": "iPhone Xs",
     "automationName": "XCUITest",
-    "bundleId": "com.tuya.smart.Hoc",
-    "udid": "fa8b03530426444eddaa9d05b7c9d91062c4baff"
+    "bundleId": "com.tuya.smart",
+    "app": "/Users/heminwon/Library/Developer/Xcode/DerivedData/│ TuyaSmartPublic-hggldkkokenozigbqsnyofuwkbqm/Build/Products/Debug-iphonesimulator/TuyaSmartPublic.app",
+    "processArguments": "{\"args\": [\"disable_animation\", \"ui_auto_test\"]}"
 }
