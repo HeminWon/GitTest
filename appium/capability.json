@@ -1,0 +1,8 @@
+{
+    "deviceName": "Hemin-iPhone",
+    "platformName": "iOS",
+    "platformVersion": "12.4.1",
+    "automationName": "XCUITest",
+    "bundleId": "com.tuya.smart.Hoc",
+    "udid": "fa8b03530426444eddaa9d05b7c9d91062c4baff"
+}
