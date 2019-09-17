@@ -17,7 +17,45 @@
     "platformVersion": "12.4.1",
     "automationName": "XCUITest",
     "bundleId": "com.tuya.smart.Hoc",
+    "udid": "fa8b03530426444eddaa9d05b7c9d91062c4baff",
+    "processArguments": "{\"args\": [\"disable_animation\", \"ui_auto_test\"]}"
+}
+```
+
+```json
+{
+    "deviceName": "Hemin-iPhone",
+    "platformName": "iOS",
+    "platformVersion": "12.4.1",
+    "automationName": "XCUITest",
+    "bundleId": "com.tuya.smart.Hoc",
     "udid": "fa8b03530426444eddaa9d05b7c9d91062c4baff"
+}
+```
+
+// 测试测试
+```json
+{
+    "deviceName": "ABC8P",
+    "platformName": "iOS",
+    "platformVersion": "11.4.1",
+    "automationName": "XCUITest",
+    "bundleId": "com.tuya.smart.Hoc",
+    "xcodeOrgId":"H68CS7T6VG",
+    "xcodeSigningId":"iPhone Developer",
+    "udid": "b3dec0f96c15f1162d1d95788e69dfe55c28faf2"
+}
+```
+
+```json
+{
+    "deviceName": "ABC8P",
+    "platformName": "iOS",
+    "platformVersion": "11.4.1",
+    "automationName": "XCUITest",
+    "bundleId": "com.tuya.smart.Hoc",
+    "udid": "b3dec0f96c15f1162d1d95788e69dfe55c28faf2",
+    "processArguments": "{\"args\": [\"disable_animation\", \"ui_auto_test\"]}"
 }
 ```
 
@@ -46,3 +84,6 @@ An unknown server-side error occurred while processing the command. Original err
 
 
 An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session because of xcodebuild failure: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+
+
+An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session because of xcodebuild failure: A new session could not be created. Details: 'capabilities' is mandatory to create a new session Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
