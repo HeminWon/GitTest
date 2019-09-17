@@ -6,7 +6,7 @@
         {
             "label": "python",
             "type": "shell",
-            "command": "echo Hello",
+            "command": "python3",
             "args": ["${file}"],
             "group": {
                 "kind": "build",
