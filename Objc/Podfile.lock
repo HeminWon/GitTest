@@ -1,0 +1,16 @@
+PODS:
+  - PhoneNetSDK (1.0.12)
+
+DEPENDENCIES:
+  - PhoneNetSDK
+
+SPEC REPOS:
+  trunk:
+    - PhoneNetSDK
+
+SPEC CHECKSUMS:
+  PhoneNetSDK: d0f24d066e8a7f2dd8e7c1a162d4c6910266def7
+
+PODFILE CHECKSUM: bca6f99f90be7bce36dae4ff234252106eda4078
+
+COCOAPODS: 1.9.3
